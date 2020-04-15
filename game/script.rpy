@@ -8,7 +8,7 @@ define hn = Character("Johny")
 define t = Character("Tommy")
 define m = Character("Morty")
 define n = Character("Norby")
-#OYE
+
 define audio.explosion = "sounds/explosion2.wav"
 define audio.fire = "sounds/fire.wav"
 define audio.AAAaaah = "sounds/AAAaaah.wav"
