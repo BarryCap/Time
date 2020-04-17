@@ -106,6 +106,8 @@ label s7:
             jump s4
         "Rester immobile":
             jump s5
+        "Dormir":
+            jump s9
 
 label s8:
     "Rien ne se passe."
@@ -117,5 +119,7 @@ label s8:
             jump s3
         "Chercher plus précisément l'origine de la lumière":
             jump s4
+        "Hurler":
+            jump s10
 
     return
