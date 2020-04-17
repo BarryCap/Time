@@ -26,7 +26,7 @@ define audio.music01 = "sounds/TIMEmusic01.ogg"
 define audio.music02 = "sounds/TIMEmusic02.wav"
 define audio.music03 = "sounds/TIMEmusic03.wav"
 define audio.music04 = "sounds/TIMEmusic04.wav"
-
+#OYE
 label start:
     scene bg time
     play music music03
@@ -812,7 +812,7 @@ label c81:
     scene bg moniteur
 
     menu:
-        "Appuyer sur le bouton xxx":
+        "Appuyer sur le bouton OYE":
             jump c94
 
 label c82:
@@ -905,7 +905,7 @@ label c102:
     b "I do it every day! And you have been telling me yesterday that I had to wake you up at 5:00."
 
     menu:
-        "":
+        "OYE":
             jump c104
 
 label c103:
