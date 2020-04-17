@@ -26,7 +26,7 @@ define audio.music01 = "sounds/TIMEmusic01.ogg"
 define audio.music02 = "sounds/TIMEmusic02.wav"
 define audio.music03 = "sounds/TIMEmusic03.wav"
 define audio.music04 = "sounds/TIMEmusic04.wav"
-#OYE
+
 label start:
     scene bg time
     play music music03
@@ -196,7 +196,8 @@ label c13:
     b "I accept your excuses but don't try this anymore."
 
     menu:
-        "This isn't funny."
+        "This isn't funny.":
+            jump c114
         "You think?":
             jump c23
         "You are right.":
@@ -646,8 +647,30 @@ label c46:
             jump c112
 
 label c47:
+    play sound talk7
+    b "You are not ok?"
+
+    menu:
+        "Yes, I'm ok.":
+            jump c46
+        "No, I'm not.":
+            jump c22
+        "Is this conversation going somewhere?":
+            jump c113
 
 label c48:
+    play sound talk7
+    b "You better not!..."
+
+    menu:
+        "Ok, ok. (Prendre les commandes du vaisseau et allumer la lumière)":
+            jump c10
+        "Fine. (Se préparer un café)":
+            jump c11
+        "Demander comment ça va à Billy":
+            jump c115
+        "Ne rien dire":
+            jump c116
 
 label c49:
 
@@ -934,6 +957,8 @@ label c113:
 label c114:
 
 label c115:
+    show billy wot
+    b "WOT?"
 
 label c116:
 

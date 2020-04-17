@@ -80,9 +80,9 @@ label x6:
 
 label x7:
     "Au bout d'une vingtaine de seconde, la plante se met à bouger légèrement."
-    scene bg xplantmove1 wait 0.5
-    scene bg xplant wait 0.5
-    scene bg xplantmove2 wait 0.5
+    scene bg xplantmove1 pause 0.5
+    scene bg xplant pause 0.5
+    scene bg xplantmove2 pause 0.5
     scene bg xplant
     menu:
         "Rester immobile":

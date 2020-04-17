@@ -122,4 +122,19 @@ label s8:
         "Hurler":
             jump s10
 
+label s9:
+    "Vous vous endormez immédiatement et d'un sommeil profond."
+
+    menu:
+        "Dormir":
+            jump s11
+        "Dormir":
+            jump s11
+        "Dormir":
+            jump s11
+
+label s10
+
+label s11
+
     return
