@@ -1,6 +1,9 @@
 label s0:
+    window hide
     scene bg ssalle
     play music music04
+    pause 1
+    window auto
     "Lorsque vous vous reveillez, vous êtes debout, au milieu d'une immense salle dont vous ne voyez pas les murs ni le plafond."
     "La seule lumière visible de la pièce semble venir de vous-même, de l'intérieur de votre corps."
     "Vous n'arrivez pas à identifier le temps pendant lequel vous avez été inconscient, cela à pu être quelques minutes comme quelques années."
@@ -63,7 +66,7 @@ label s4:
 
     menu:
         "Marcher":
-            jump c6
+            jump s6
         "Rester immobile":
             jump s8
 
@@ -119,22 +122,62 @@ label s8:
             jump s3
         "Chercher plus précisément l'origine de la lumière":
             jump s4
-        "Hurler":
+        "Appeler à l'aide":
             jump s10
 
 label s9:
+    show bg black
+    play music music05
     "Vous vous endormez immédiatement et d'un sommeil profond."
+    window hide
+    pause 3
+    window auto
+    "Lorsque vous vous réveillez, vous ne voyez plus rien."
+
+label s10:
+    "Aucun son ne sort de votre bouche."
 
     menu:
-        "Dormir":
+        "Hurler":
             jump s11
-        "Dormir":
-            jump s11
-        "Dormir":
-            jump s11
+        "Frapper le sol":
+            jump s12
+        "Frapper dans vos mains":
+            jump s13
 
-label s10
+label s11:
+    "Aucun son ne sort de votre bouche."
 
-label s11
+    menu:
+        "Hurler encore":
+            jump s11
+        "Frapper le sol":
+            jump s12
+        "Frapper dans vos mains":
+            jump s13
+
+label s12:
+    "Vous n'entendez rien mais vous sentez le sol trembler."
+
+    menu:
+        "Frapper plus fort":
+            jump s14
+        "Hurler":
+            jump s11
+        "Frapper dans vos mains":
+            jump s13
+
+label s13:
+    "Vos mains ne produisent aucun son."
+
+    menu:
+        "Hurler":
+            jump s11
+        "Frapper encore dans vos mains":
+            jump s13
+
+label s14:
+
+label s15:
 
     return
