@@ -147,6 +147,7 @@ label s10:
 
 label s11:
     "Aucun son ne sort de votre bouche."
+    "Rien ne semble avoir bougé."
 
     menu:
         "Hurler encore":

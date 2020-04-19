@@ -37,7 +37,7 @@ label start:
             jump c1
 
 label c1:
-    scene bg blac
+    scene bg black
 
     play sound talk3
     b "Colonel Robson, wake up!"
@@ -920,6 +920,8 @@ label c100:
 
     menu:
         "Good.":
+            jump c103
+        "OYE":
             jump c103
 
 label c101:
