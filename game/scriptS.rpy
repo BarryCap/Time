@@ -1,3 +1,43 @@
+image bg ssalle ani1:
+    "bg ssalle l.png"
+    pause 0.04
+    "bg ssalle r.png"
+    pause 0.04
+    "bg ssalle d.png"
+    pause 0.04
+    "bg ssalle u.png"
+    pause 0.04
+    "bg ssalle d.png"
+    pause 0.04
+    "bg ssalle.png"
+    pause 0.04
+    "bg ssalle r.png"
+    pause 0.04
+    "bg ssalle l.png"
+    pause 0.04
+    "bg ssalle u.png"
+    pause 0.04
+    "bg ssalle d.png"
+    pause 0.04
+    "bg ssalle r.png"
+    pause 0.04
+    "bg ssalle.png"
+    pause 0.04
+    "bg ssalle d.png"
+    pause 0.04
+    "bg ssalle u.png"
+    pause 0.04
+    "bg ssalle d.png"
+    pause 0.04
+    "bg ssalle l.png"
+    pause 0.04
+    "bg ssalle r.png"
+    pause 0.04
+    "bg ssalle u.png"
+    pause 0.04
+    "bg ssalle.png"
+    repeat
+
 label s0:
     window hide
     scene bg ssalle
@@ -158,6 +198,27 @@ label s11:
             jump s13
 
 label s12:
+    scene bg ssalle u
+    pause 0.02
+    scene bg ssalle d
+    pause 0.02
+    scene bg ssalle l
+    pause 0.02
+    scene bg ssalle u
+    pause 0.02
+    scene bg ssalle r
+    pause 0.02
+    scene bg ssalle d
+    pause 0.02
+    scene bg ssalle r
+    pause 0.02
+    scene bg ssalle l
+    pause 0.02
+    scene bg ssalle d
+    pause 0.02
+    scene bg ssalle u
+    pause 0.02
+    scene bg ssalle
     "Vous n'entendez rien mais vous sentez le sol trembler."
 
     menu:
@@ -178,7 +239,56 @@ label s13:
             jump s13
 
 label s14:
+    scene bg ssalle ani1
+    "Le sol se met à trembler de manière continu."
+    "Vous n'entendez cependant toujours aucun son."
+
+    menu:
+        "Crier « Au secours ! »":
+            jump s15
+        "Frapper dans vos mains":
+            jump s16
+        "Courir":
+            jump s17
 
 label s15:
+    scene bg ssalle
+    "Le sol s'arrête soudainement de trembler."
+    a "Hey!"
+    a "Who are you to shout like this?"
+
+    menu:
+        "Se retourner":
+            jump s18
+        "Ignorer":
+            jump s19
+
+label s16:
+    "Rien ne se passe."
+    "Vous n'entendez pas le claquement de vos mains."
+
+    menu:
+        "Crier « Au secours ! »":
+            jump s15
+        "Courir":
+            jump s17
+
+label s17:
+
+label s18:
+    show barry base
+    window hide
+    pause 1
+    window auto
+
+label s19:
+    a "Hey!"
+    a "I'm talking to you!"
+
+    menu:
+        "Se retourner":
+            jump s18
+        "Ignorer":
+            jump sOYE
 
     return

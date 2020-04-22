@@ -8,9 +8,11 @@ define hn = Character("Johny")
 define t = Character("Tommy")
 define m = Character("Morty")
 define n = Character("Norby")
+define p = Character("Peggy")
+define h = Character("Harry")
 
 define audio.explosion = "sounds/explosion2.wav"
-define audio.fire = "sounds/fire.wav"
+define audio.shot = "sounds/shot.wav"
 define audio.AAAaaah = "sounds/AAAaaah.wav"
 define audio.talk0 = "sounds/colonel.wav"
 define audio.talk1 = "sounds/AHA.wav"
@@ -27,6 +29,12 @@ define audio.music02 = "sounds/TIMEmusic02.wav"
 define audio.music03 = "sounds/TIMEmusic03.wav"
 define audio.music04 = "sounds/TIMEmusic04.wav"
 define audio.music05 = "sounds/TIMEmusic05.wav"
+define audio.music06 = "sounds/TIMEmusic06zephyria.wav"
+define audio.music07 = "sounds/TIMEmusic07.wav"
+define audio.music08 = "sounds/TIMEmusic08.wav"
+define audio.music09 = "sounds/TIMEmusic09.wav"
+define audio.music10 = "sounds/TIMEmusic10.wav"
+define audio.music11 = "sounds/TIMEmusic11.wav"
 
 label start:
     scene bg time
@@ -197,7 +205,7 @@ label c13:
     b "I accept your excuses but don't try this anymore."
 
     menu:
-        "This isn't funny.":
+        "Ok.":
             jump c114
         "You think?":
             jump c23
@@ -219,6 +227,10 @@ label c14:
             jump c28
         "Because you're a fool.":
             jump c29
+        "L'attaquer encore":
+            jump c117
+        "Le menacer avec le revolver sous votre oreiller":
+            jump c15
 
 label c15:
     play sound talk3
@@ -432,7 +444,7 @@ label c31:
             jump c44
 
 label c32:
-    play sound fire
+    play sound shot
 
     play sound talk2
     b "Aah!"
@@ -440,18 +452,18 @@ label c32:
     "Billy recule."
 
     menu:
-        "Tirer encore":
+        "Tirer":
             jump c32
         "S'approcher et le tuer":
             jump c68
 
 label c33:
-    play sound fire
+    play sound shot
     pause 0.5
     play music music01
     show billy mourant
 
-    play sound talk2
+    play sound AAAaaah
     b "AAH!"
 
     menu:
@@ -461,6 +473,7 @@ label c33:
             jump c35
 
 label c34:
+    play sound shot
     show billy mort
 
     play sound talk2
@@ -480,7 +493,7 @@ label c34:
 label c35:
     hide billy
 
-    play sound AAAaaah
+    play sound talk2
     b "AAAaaah..."
 
     menu:
@@ -886,6 +899,22 @@ label c90:
 label c91:
 
 label c92:
+    scene bg stam
+    show cockpit graph behind billy
+    play sound talk8
+    b "Ok so on the screen it is written « ſøq vøl/ touch green »."
+    play sound talk8
+    b "I think « ſøq vøl/ » means « navigation problem »."
+    play sound talk3
+    b "But I'm not sure."
+
+    menu:
+        "I think you just have to push the green button.":
+            jump c118
+        "What is this language?":
+            jump c119
+        "I need to think.":
+            jump c120
 
 label c93:
 
@@ -958,6 +987,15 @@ label c112:
 label c113:
 
 label c114:
+    show billy content
+    play sound talk1
+    b "Good."
+    play sound talk7
+    b "So will you go at the commands to fix the navigation problem?"
+
+    menu:
+        "Yes. (Aller au cockpit.)":
+            jump c92
 
 label c115:
     show billy wot
