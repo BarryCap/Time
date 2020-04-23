@@ -38,6 +38,46 @@ image bg ssalle ani1:
     "bg ssalle.png"
     repeat
 
+image bg ssalle ani2:
+    "bg ssalle d.png"
+    pause 0.02
+    "bg ssalle l.png"
+    pause 0.02
+    "bg ssalle u.png"
+    pause 0.02
+    "bg ssalle r.png"
+    pause 0.02
+    "bg ssalle.png"
+    pause 0.02
+    "bg ssalle u.png"
+    pause 0.02
+    "bg ssalle d.png"
+    pause 0.02
+    "bg ssalle r.png"
+    pause 0.02
+    "bg ssalle d.png"
+    pause 0.02
+    "bg ssalle l.png"
+    pause 0.02
+    "bg ssalle u.png"
+    pause 0.02
+    "bg ssalle r.png"
+    pause 0.02
+    "bg ssalle.png"
+    pause 0.02
+    "bg ssalle d.png"
+    pause 0.02
+    "bg ssalle l.png"
+    pause 0.02
+    "bg ssalle d.png"
+    pause 0.02
+    "bg ssalle u.png"
+    pause 0.02
+    "bg ssalle r.png"
+    pause 0.02
+    "bg ssalle.png"
+    repeat
+
 label s0:
     window hide
     scene bg ssalle
@@ -110,6 +150,7 @@ label s4:
         "Rester immobile":
             jump s8
 
+
 label s5:
     "Rien ne se passe."
 
@@ -136,6 +177,8 @@ label s6:
             jump s4
         "Rester immobile":
             jump s5
+        "Crier « Au secours ! »":
+            jump s15
 
 label s7:
     "Vous n'arriverez probablement à rien en marchant ainsi."
@@ -167,7 +210,7 @@ label s8:
 
 label s9:
     show bg black
-    play music music05
+    play music music04cut1
     "Vous vous endormez immédiatement et d'un sommeil profond."
     window hide
     pause 3
@@ -240,7 +283,7 @@ label s13:
 
 label s14:
     scene bg ssalle ani1
-    "Le sol se met à trembler de manière continu."
+    "Le sol se met à trembler de manière continue."
     "Vous n'entendez cependant toujours aucun son."
 
     menu:
@@ -254,6 +297,7 @@ label s14:
 label s15:
     scene bg ssalle
     "Le sol s'arrête soudainement de trembler."
+    "Vous sentez une présence dérrière vous."
     a "Hey!"
     a "Who are you to shout like this?"
 
@@ -274,12 +318,34 @@ label s16:
             jump s17
 
 label s17:
+    scene bg ssalle ani2
+    "Le sol se met à trembler encore plus rapidement."
+
+    menu:
+        "Continuer de courir":
+            jump s20
+        "S'arrêter":
+            jump s21
+        "Crier « Au secours ! »":
+            jump s15
 
 label s18:
     show barry base
     window hide
     pause 1
     window auto
+    a "Have you been jumpin' in the teleportation pool?"
+    a "Bad move."
+
+    menu:
+        "Yes, I wanted to try and see what was inside this pool.":
+            jump s22
+        "It was just for fun.":
+            jump s23
+        "I thought it would teleport me on a heavenly planet.":
+            jump s24
+        "Who are you?":
+            jump s25
 
 label s19:
     a "Hey!"
@@ -289,6 +355,20 @@ label s19:
         "Se retourner":
             jump s18
         "Ignorer":
-            jump sOYE
+            jump s26
+
+label s20:
+
+label s21:
+
+label s22:
+
+label s23:
+
+label s24:
+
+label s25:
+
+label s26:
 
     return

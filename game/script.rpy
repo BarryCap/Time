@@ -28,6 +28,7 @@ define audio.music01 = "sounds/TIMEmusic01.ogg"
 define audio.music02 = "sounds/TIMEmusic02.wav"
 define audio.music03 = "sounds/TIMEmusic03.wav"
 define audio.music04 = "sounds/TIMEmusic04.wav"
+define audio.music04cut1 = "sounds/TIMEmusic04cut1.wav"
 define audio.music05 = "sounds/TIMEmusic05.wav"
 define audio.music06 = "sounds/TIMEmusic06zephyria.wav"
 define audio.music07 = "sounds/TIMEmusic07.wav"
@@ -35,6 +36,39 @@ define audio.music08 = "sounds/TIMEmusic08.wav"
 define audio.music09 = "sounds/TIMEmusic09.wav"
 define audio.music10 = "sounds/TIMEmusic10.wav"
 define audio.music11 = "sounds/TIMEmusic11.wav"
+
+image bg w_b ani1:
+    "f0f0f0.png"
+    pause 0.5
+    "e0e0e0.png"
+    pause 0.5
+    "d0d0d0.png"
+    pause 0.5
+    "c0c0c0.png"
+    pause 0.5
+    "b0b0b0.png"
+    pause 0.5
+    "a0a0a0.png"
+    pause 0.5
+    "909090.png"
+    pause 0.5
+    "808080.png"
+    pause 0.5
+    "707070.png"
+    pause 0.5
+    "606060.png"
+    pause 0.5
+    "505050.png"
+    pause 0.5
+    "404040.png"
+    pause 0.5
+    "303030.png"
+    pause 0.5
+    "202020.png"
+    pause 0.5
+    "101010.png"
+    pause 0.5
+    "000000.png"
 
 label start:
     scene bg time
@@ -452,8 +486,8 @@ label c32:
     "Billy recule."
 
     menu:
-        "Tirer":
-            jump c32
+        "Tirer encore":
+            jump c121
         "S'approcher et le tuer":
             jump c68
 
@@ -574,7 +608,7 @@ label c40:
     pause 0.5
     show cockpit destruction7
     pause 0.5
-    show white
+    show ffffff
     pause 1
     scene bg end1
     pause 13
@@ -807,6 +841,7 @@ label c65:
         "Ok, so what do I have to check?":
             jump c80
 
+label c66:
 
 label c67:
     play sound talk9
@@ -820,6 +855,24 @@ label c67:
         "What thing?":
             jump c66
 
+label c68:
+
+label c69:
+
+label c70:
+
+label c71:
+
+label c72:
+
+label c73:
+
+label c74:
+
+label c75:
+
+label c76:
+
 label c77:
     scene bg teleportation
 
@@ -831,9 +884,12 @@ label c77:
         "Retourner au cockpit":
             jump c87
 
+label c78:
+
+label c79:
+
 label c80:
     show cockpit base behind billy
-
     play sound talk8
     b "There's a navigation problem."
     play sound talk8
@@ -853,11 +909,14 @@ label c81:
             jump c94
 
 label c82:
+    scene bg w_b ani1
     "Le liquide est froid."
     "Vous sentez votre corps progressivement vous abandoner."
     "Vous ne voyez et ne sentez plus rien, vous perdez tous vos sens un par un."
     "Vous perdez ensuite conscience."
     "..."
+    window hide
+    pause 1
     jump s0
 
 label c83:
@@ -1012,5 +1071,14 @@ label c119:
 label c120:
 
 label c121:
+    play sound shot
+    play sound talk2
+    b "Stop that!"
+
+    menu:
+        "Tirer encore":
+            jump c121
+        "S'approcher et le tuer":
+            jump c68
 
     return
