@@ -10,6 +10,7 @@ define m = Character("Morty")
 define n = Character("Norby")
 define p = Character("Peggy")
 define h = Character("Harry")
+define S = Character("Someone")
 
 define audio.explosion = "sounds/explosion2.wav"
 define audio.shot = "sounds/shot.wav"
@@ -69,6 +70,119 @@ image bg w_b ani1:
     "101010.png"
     pause 0.5
     "000000.png"
+
+image bg w_b ani2:
+    "f0f0f0.png"
+    pause 0.2
+    "e0e0e0.png"
+    pause 0.2
+    "d0d0d0.png"
+    pause 0.2
+    "c0c0c0.png"
+    pause 0.2
+    "b0b0b0.png"
+    pause 0.2
+    "a0a0a0.png"
+    pause 0.2
+    "909090.png"
+    pause 0.2
+    "808080.png"
+    pause 0.2
+    "707070.png"
+    pause 0.2
+    "606060.png"
+    pause 0.2
+    "505050.png"
+    pause 0.2
+    "404040.png"
+    pause 0.2
+    "303030.png"
+    pause 0.2
+    "202020.png"
+    pause 0.2
+    "101010.png"
+    pause 0.2
+    "000000.png"
+
+image bg ssalle ani1:
+    "bg ssalle l.png"
+    pause 0.04
+    "bg ssalle r.png"
+    pause 0.04
+    "bg ssalle d.png"
+    pause 0.04
+    "bg ssalle u.png"
+    pause 0.04
+    "bg ssalle d.png"
+    pause 0.04
+    "bg ssalle.png"
+    pause 0.04
+    "bg ssalle r.png"
+    pause 0.04
+    "bg ssalle l.png"
+    pause 0.04
+    "bg ssalle u.png"
+    pause 0.04
+    "bg ssalle d.png"
+    pause 0.04
+    "bg ssalle r.png"
+    pause 0.04
+    "bg ssalle.png"
+    pause 0.04
+    "bg ssalle d.png"
+    pause 0.04
+    "bg ssalle u.png"
+    pause 0.04
+    "bg ssalle d.png"
+    pause 0.04
+    "bg ssalle l.png"
+    pause 0.04
+    "bg ssalle r.png"
+    pause 0.04
+    "bg ssalle u.png"
+    pause 0.04
+    "bg ssalle.png"
+    repeat
+
+image bg ssalle ani2:
+    "bg ssalle d.png"
+    pause 0.02
+    "bg ssalle l.png"
+    pause 0.02
+    "bg ssalle u.png"
+    pause 0.02
+    "bg ssalle r.png"
+    pause 0.02
+    "bg ssalle.png"
+    pause 0.02
+    "bg ssalle u.png"
+    pause 0.02
+    "bg ssalle d.png"
+    pause 0.02
+    "bg ssalle r.png"
+    pause 0.02
+    "bg ssalle d.png"
+    pause 0.02
+    "bg ssalle l.png"
+    pause 0.02
+    "bg ssalle u.png"
+    pause 0.02
+    "bg ssalle r.png"
+    pause 0.02
+    "bg ssalle.png"
+    pause 0.02
+    "bg ssalle d.png"
+    pause 0.02
+    "bg ssalle l.png"
+    pause 0.02
+    "bg ssalle d.png"
+    pause 0.02
+    "bg ssalle u.png"
+    pause 0.02
+    "bg ssalle r.png"
+    pause 0.02
+    "bg ssalle.png"
+    repeat
 
 label start:
     scene bg time

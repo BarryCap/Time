@@ -1,83 +1,3 @@
-image bg ssalle ani1:
-    "bg ssalle l.png"
-    pause 0.04
-    "bg ssalle r.png"
-    pause 0.04
-    "bg ssalle d.png"
-    pause 0.04
-    "bg ssalle u.png"
-    pause 0.04
-    "bg ssalle d.png"
-    pause 0.04
-    "bg ssalle.png"
-    pause 0.04
-    "bg ssalle r.png"
-    pause 0.04
-    "bg ssalle l.png"
-    pause 0.04
-    "bg ssalle u.png"
-    pause 0.04
-    "bg ssalle d.png"
-    pause 0.04
-    "bg ssalle r.png"
-    pause 0.04
-    "bg ssalle.png"
-    pause 0.04
-    "bg ssalle d.png"
-    pause 0.04
-    "bg ssalle u.png"
-    pause 0.04
-    "bg ssalle d.png"
-    pause 0.04
-    "bg ssalle l.png"
-    pause 0.04
-    "bg ssalle r.png"
-    pause 0.04
-    "bg ssalle u.png"
-    pause 0.04
-    "bg ssalle.png"
-    repeat
-
-image bg ssalle ani2:
-    "bg ssalle d.png"
-    pause 0.02
-    "bg ssalle l.png"
-    pause 0.02
-    "bg ssalle u.png"
-    pause 0.02
-    "bg ssalle r.png"
-    pause 0.02
-    "bg ssalle.png"
-    pause 0.02
-    "bg ssalle u.png"
-    pause 0.02
-    "bg ssalle d.png"
-    pause 0.02
-    "bg ssalle r.png"
-    pause 0.02
-    "bg ssalle d.png"
-    pause 0.02
-    "bg ssalle l.png"
-    pause 0.02
-    "bg ssalle u.png"
-    pause 0.02
-    "bg ssalle r.png"
-    pause 0.02
-    "bg ssalle.png"
-    pause 0.02
-    "bg ssalle d.png"
-    pause 0.02
-    "bg ssalle l.png"
-    pause 0.02
-    "bg ssalle d.png"
-    pause 0.02
-    "bg ssalle u.png"
-    pause 0.02
-    "bg ssalle r.png"
-    pause 0.02
-    "bg ssalle.png"
-    repeat
-
 label s0:
     window hide
     scene bg ssalle
@@ -298,8 +218,8 @@ label s15:
     scene bg ssalle
     "Le sol s'arrête soudainement de trembler."
     "Vous sentez une présence dérrière vous."
-    a "Hey!"
-    a "Who are you to shout like this?"
+    S "Hey!"
+    S "Who are you to shout like this?"
 
     menu:
         "Se retourner":
@@ -334,22 +254,22 @@ label s18:
     window hide
     pause 1
     window auto
-    a "Have you been jumpin' in the teleportation pool?"
-    a "Bad move."
+    S "Have you been jumpin' in the teleportation pool?"
+    S "Bad move."
 
     menu:
         "Yes, I wanted to try and see what was inside this pool.":
             jump s22
         "It was just for fun.":
             jump s23
-        "I thought it would teleport me on a heavenly planet.":
+        "I thought it would teleport me on S heavenly planet.":
             jump s24
         "Who are you?":
             jump s25
 
 label s19:
-    a "Hey!"
-    a "I'm talking to you!"
+    S "Hey!"
+    S "I'm talking to you!"
 
     menu:
         "Se retourner":
@@ -358,8 +278,36 @@ label s19:
             jump s26
 
 label s20:
+    "Le tremblement est trop intense."
+    scene bg w_b ani2
+    "Vous vous évanouissez."
+    window hide
+    pause 3
+    window auto
+    scene c0c0c0
+    "Vous  quelqu'un vous appelle."
+    S "Colonel Robson?"
+
+    menu:
+        "Yes, it's me.":
+            jump s27
+        "Who are you?":
+            jump s28
+        "How do you know my name?":
+            jump s29
+        "Do I know you?":
+            jump s30
+        "Ne rien dire":
+            jump s31
 
 label s21:
+    scene bg ssalle ani1
+    "Le sol tremble plus lentement."
+
+    menu:
+        "Attendre plus longtemps":
+            jump s32
+        #OYE
 
 label s22:
 
@@ -370,5 +318,9 @@ label s24:
 label s25:
 
 label s26:
+
+label s27:
+
+label s28:
 
     return
