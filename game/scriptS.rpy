@@ -262,7 +262,7 @@ label s18:
             jump s22
         "It was just for fun.":
             jump s23
-        "I thought it would teleport me on S heavenly planet.":
+        "I thought it would teleport me on a heavenly planet.":
             jump s24
         "Who are you?":
             jump s25
@@ -307,9 +307,23 @@ label s21:
     menu:
         "Attendre plus longtemps":
             jump s32
-        #OYE
+        "Courrir":
+            jump s33
 
 label s22:
+    a "See what was inside the pool?"
+    a "Haven't you noticed the warning sheat ?"
+    a "That's what I said. Bad move."
+
+    menu:
+        "But it's not so bad, I am not alone anymore.":
+            jump s34
+        "I think this is not. It might be interesting.":
+            jump s35
+        "In fact, yes. It is a bad move.":
+            jump s36
+        "Who are you?":
+            jump s25
 
 label s23:
 
@@ -322,5 +336,41 @@ label s26:
 label s27:
 
 label s28:
+
+label s29:
+
+label s30:
+
+label s31:
+
+label s32:
+
+label s33:
+    "Le sol se met à trembler plus rapidement."
+    window hide
+    scene bg ssalle ani1
+    pause 1
+    window auto
+    "Le tremblement est trop intense."
+    scene bg w_b ani2
+    "Vous vous évanouissez."
+    window hide
+    pause 3
+    window auto
+    scene c0c0c0
+    "Vous  quelqu'un vous appelle."
+    S "Colonel Robson?"
+
+    menu:
+        "Yes, it's me.":
+            jump s27
+        "Who are you?":
+            jump s28
+        "How do you know my name?":
+            jump s29
+        "Do I know you?":
+            jump s30
+        "Ne rien dire":
+            jump s31
 
     return
