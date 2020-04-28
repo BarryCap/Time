@@ -311,9 +311,9 @@ label s21:
             jump s33
 
 label s22:
-    a "See what was inside the pool?"
-    a "Haven't you noticed the warning sheat ?"
-    a "That's what I said. Bad move."
+    S "See what was inside the pool?"
+    S "Haven't you noticed the warning sheat ?"
+    S "That's what I said. Bad move."
 
     menu:
         "But it's not so bad, I am not alone anymore.":
@@ -326,6 +326,17 @@ label s22:
             jump s25
 
 label s23:
+    S "Just for fun?"
+    S "Are you mad?"
+    menu:
+        S "“Never jump into the teleportation pool before setting a destination on the teleportation device.”"
+        #OYE timed menu with « S "“Never jump into the teleportation pool before setting a destination on the teleportation device.”" » above the menu.
+        "Interrompre":
+            jump s37
+        "Le laisser parler":
+            $ True
+    S "That's what Billy told me before pushing me into this fucking pool."
+    #OYE
 
 label s24:
 
@@ -336,6 +347,8 @@ label s26:
 label s27:
 
 label s28:
+    a "My name's Barry."
+    #OYE
 
 label s29:
 
@@ -372,5 +385,11 @@ label s33:
             jump s30
         "Ne rien dire":
             jump s31
+
+label s34:
+
+label s35:
+
+label s36:
 
     return

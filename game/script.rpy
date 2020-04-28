@@ -1,16 +1,16 @@
-﻿define b = Character("Billy")
+﻿define b = Character("Billy", color="#ffffff")
 define o = Character("Bobby")
-define r = Character("Robby")
-define a = Character("Barry")
+define r = Character("Robby", color="#c0c0c0")
+define a = Character("Barry", color="#2f2f2f")
 define rt = Character("Barty")
-define j = Character("Jimmy")
+define j = Character("Jimmy", color="#008000")
 define hn = Character("Johny")
 define t = Character("Tommy")
 define m = Character("Morty")
 define n = Character("Norby")
-define p = Character("Peggy")
+define p = Character("Peggy", color="ffbbbb")
 define h = Character("Harry")
-define S = Character("Someone")
+define S = Character("Someone", color="#2f2f2f")
 
 define audio.explosion = "sounds/explosion2.wav"
 define audio.shot = "sounds/shot.wav"
