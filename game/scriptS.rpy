@@ -328,6 +328,7 @@ label s22:
 label s23:
     S "Just for fun?"
     S "Are you mad?"
+
     menu:
         S "“Never jump into the teleportation pool before setting a destination on the teleportation device.”"
         #OYE timed menu with « S "“Never jump into the teleportation pool before setting a destination on the teleportation device.”" » above the menu.
@@ -336,7 +337,13 @@ label s23:
         "Le laisser parler":
             $ True
     S "That's what Billy told me before pushing me into this fucking pool."
-    #OYE
+
+    menu:
+        "Why Billy pushed you down the pool?":
+            jump s38
+        "I knew Billy was evil!":
+            jump s39
+        #OYE?
 
 label s24:
 
