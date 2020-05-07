@@ -343,7 +343,10 @@ label s23:
             jump s38
         "I knew Billy was evil!":
             jump s39
-        #OYE?
+        "Talk with a more appropriate language please!"
+            jump s40
+        "Who are you?":
+            jump s41
 
 label s24:
 
@@ -394,9 +397,17 @@ label s33:
             jump s31
 
 label s34:
+    S "Are you?"
+    #OYE!!!
 
 label s35:
 
 label s36:
+
+label s37:
+
+label s38:
+
+label s39:
 
     return
