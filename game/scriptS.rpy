@@ -398,7 +398,16 @@ label s33:
 
 label s34:
     S "Are you?"
-    #OYE!!!
+    hide barry
+    with Fade(1)
+
+    menu:
+        "Chercher l'homme":
+            jump s42
+        "Hurler":
+            jump s43
+        "Se dire « Qu'est-ce qui se passe ? »":
+            jump s44
 
 label s35:
 
@@ -409,5 +418,15 @@ label s37:
 label s38:
 
 label s39:
+
+label s40:
+
+label s41:
+
+label s42:
+
+label s43:
+
+label s44:
 
     return
