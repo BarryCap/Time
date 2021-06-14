@@ -158,41 +158,41 @@ define config.window_icon = "gui/window_icon.png"
 
 init python:
 
-    ## The following functions take file patterns. File patterns are case-
-    ## insensitive, and matched against the path relative to the base directory,
-    ## with and without a leading /. If multiple patterns match, the first is
-    ## used.
-    ##
-    ## In a pattern:
-    ##
-    ## / is the directory separator.
-    ##
-    ## * matches all characters, except the directory separator.
-    ##
-    ## ** matches all characters, including the directory separator.
-    ##
-    ## For example, "*.txt" matches txt files in the base directory, "game/
-    ## **.ogg" matches ogg files in the game directory or any of its
-    ## subdirectories, and "**.psd" matches psd files anywhere in the project.
+  ## The following functions take file patterns. File patterns are case-
+  ## insensitive, and matched against the path relative to the base directory,
+  ## with and without a leading /. If multiple patterns match, the first is
+  ## used.
+  ##
+  ## In a pattern:
+  ##
+  ## / is the directory separator.
+  ##
+  ## * matches all characters, except the directory separator.
+  ##
+  ## ** matches all characters, including the directory separator.
+  ##
+  ## For example, "*.txt" matches txt files in the base directory, "game/
+  ## **.ogg" matches ogg files in the game directory or any of its
+  ## subdirectories, and "**.psd" matches psd files anywhere in the project.
 
-    ## Classify files as None to exclude them from the built distributions.
+  ## Classify files as None to exclude them from the built distributions.
 
-    build.classify('**~', None)
-    build.classify('**.bak', None)
-    build.classify('**/.**', None)
-    build.classify('**/#**', None)
-    build.classify('**/thumbs.db', None)
+  build.classify('**~', None)
+  build.classify('**.bak', None)
+  build.classify('**/.**', None)
+  build.classify('**/#**', None)
+  build.classify('**/thumbs.db', None)
 
-    ## To archive files, classify them as 'archive'.
+  ## To archive files, classify them as 'archive'.
 
-    # build.classify('game/**.png', 'archive')
-    # build.classify('game/**.jpg', 'archive')
+  # build.classify('game/**.png', 'archive')
+  # build.classify('game/**.jpg', 'archive')
 
-    ## Files matching documentation patterns are duplicated in a mac app build,
-    ## so they appear in both the app and the zip file.
+  ## Files matching documentation patterns are duplicated in a mac app build,
+  ## so they appear in both the app and the zip file.
 
-    build.documentation('*.html')
-    build.documentation('*.txt')
+  build.documentation('*.html')
+  build.documentation('*.txt')
 
 ## Set this to a string containing your Apple Developer ID Application to enable
 ## codesigning on the Mac. Be sure to change it to your own Apple-issued ID.

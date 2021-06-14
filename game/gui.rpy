@@ -9,7 +9,7 @@ init offset = -2
 ## Calling gui.init resets the styles to sensible default values, and sets the
 ## width and height of the game.
 init python:
-    gui.init(1920, 1080)
+  gui.init(1920, 1080)
 
 
 
@@ -413,59 +413,59 @@ define gui.language = "unicode"
 
 init python:
 
-    ## This increases the size of the quick buttons to make them easier to touch
-    ## on tablets and phones.
-    if renpy.variant("touch"):
+  ## This increases the size of the quick buttons to make them easier to touch
+  ## on tablets and phones.
+  if renpy.variant("touch"):
 
-        gui.quick_button_borders = Borders(60, 21, 60, 0)
+  gui.quick_button_borders = Borders(60, 21, 60, 0)
 
-    ## This changes the size and spacing of various GUI elements to ensure they
-    ## are easily visible on phones.
-    if renpy.variant("small"):
+  ## This changes the size and spacing of various GUI elements to ensure they
+  ## are easily visible on phones.
+  if renpy.variant("small"):
 
-        ## Font sizes.
-        gui.text_size = 45
-        gui.name_text_size = 54
-        gui.notify_text_size = 38
-        gui.interface_text_size = 45
-        gui.button_text_size = 45
-        gui.label_text_size = 51
+  ## Font sizes.
+  gui.text_size = 45
+  gui.name_text_size = 54
+  gui.notify_text_size = 38
+  gui.interface_text_size = 45
+  gui.button_text_size = 45
+  gui.label_text_size = 51
 
-        ## Adjust the location of the textbox.
-        gui.textbox_height = 360
-        gui.name_xpos = 120
-        gui.text_xpos = 135
-        gui.text_width = 1650
+  ## Adjust the location of the textbox.
+  gui.textbox_height = 360
+  gui.name_xpos = 120
+  gui.text_xpos = 135
+  gui.text_width = 1650
 
-        ## Change the size and spacing of various things.
-        gui.slider_size = 54
+  ## Change the size and spacing of various things.
+  gui.slider_size = 54
 
-        gui.choice_button_width = 1860
+  gui.choice_button_width = 1860
 
-        gui.navigation_spacing = 30
-        gui.pref_button_spacing = 15
+  gui.navigation_spacing = 30
+  gui.pref_button_spacing = 15
 
-        gui.history_height = 285
-        gui.history_text_width = 1035
+  gui.history_height = 285
+  gui.history_text_width = 1035
 
-        gui.quick_button_text_size = 30
+  gui.quick_button_text_size = 30
 
-        ## File button layout.
-        gui.file_slot_cols = 2
-        gui.file_slot_rows = 2
+  ## File button layout.
+  gui.file_slot_cols = 2
+  gui.file_slot_rows = 2
 
-        ## NVL-mode.
-        gui.nvl_height = 255
+  ## NVL-mode.
+  gui.nvl_height = 255
 
-        gui.nvl_name_width = 458
-        gui.nvl_name_xpos = 488
+  gui.nvl_name_width = 458
+  gui.nvl_name_xpos = 488
 
-        gui.nvl_text_width = 1373
-        gui.nvl_text_xpos = 518
-        gui.nvl_text_ypos = 8
+  gui.nvl_text_width = 1373
+  gui.nvl_text_xpos = 518
+  gui.nvl_text_ypos = 8
 
-        gui.nvl_thought_width = 1860
-        gui.nvl_thought_xpos = 30
+  gui.nvl_thought_width = 1860
+  gui.nvl_thought_xpos = 30
 
-        gui.nvl_button_width = 1860
-        gui.nvl_button_xpos = 30
+  gui.nvl_button_width = 1860
+  gui.nvl_button_xpos = 30
