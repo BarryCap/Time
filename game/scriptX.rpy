@@ -8,7 +8,6 @@
       jump x2
     "Hurler":
       jump x3
-
 label x1:
   "Après avoir observé la végétation étrangère et les roches diverses, et vous être rendu compte de l'air respirable, vous avez constaté que la planète était habitée."
   scene bg xplant
@@ -22,7 +21,6 @@ label x1:
       jump x6
     "Attendre":
       jump x7
-
 label x2:
   "Vous ne disposez pas d'un appareil de retéléport automatique."
   menu:
@@ -34,7 +32,6 @@ label x2:
       jump x11
     "Hurler":
       jump x12
-
 label x3:
   "Rien ne se passe."
   "En réalité, en même temps que vous avez hurlé, vous avez eu comme l'impression que quelqu'un hurlait en même temps que vous."
@@ -45,7 +42,6 @@ label x3:
       jump x14
     "Explorer la planète":
       jump x17
-
 label x4:
   "Après avoir ramassé quelques échantillons de plantes et roches, vous vous rendez compte de l'absence d'un appareil de retéléport automatique en votre possession et donc qu'il est impossible pour vous de retourner au vaisseau."
   menu:
@@ -55,7 +51,6 @@ label x4:
       jump x9
     "Attendre":
       jump x7
-
 label x5:
   scene bg xplantinvisible
   "La plante disparaît mais vous ne la traversez pas pour autant."
@@ -66,7 +61,6 @@ label x5:
       jump x19
     "Rester immobile":
       jump x20
-
 label x6:
   scene bg xplantplus
   "Vous trouvez de plus en plus de fleurs comme celle-ci."
@@ -77,7 +71,6 @@ label x6:
       jump x22
     "Explorer devant vous":
       jump x23
-
 label x7:
   "Au bout d'une vingtaine de seconde, la plante se met à bouger légèrement."
   scene bg xplantmove1 pause 0.5
@@ -89,7 +82,6 @@ label x7:
       jump x24
     "Toucher la plante":
       jump x25
-
 label x8:
   "Rien ne se passe."
   menu:
@@ -97,7 +89,6 @@ label x8:
       jump x8
     "Explorer la planète":
       jump x11
-
 label x9:
   "Lorsque vous vous retournez pour toucher la plante, vous vous appercevez quelle n'est plus là."
   scene bg xplantinvisible
@@ -122,7 +113,6 @@ label x10:
       jump x26
     "Hurler":
       jump x12
-
 label x11:
   scene bg xchoses
   "Après avoir observé la végétation étrangère et les roches diverses, et vous être rendu compte de l'air respirable, vous avez constaté que la planète était habitée."
@@ -135,7 +125,6 @@ label x11:
       jump x9
     "Attendre":
       jump x7
-
 label x13:
   "Vous avez la même impression qu'avant."
   "Vous avez d'ailleur l'impression étrange que ce cri est légèrement en avance par rapport au vôtre."
@@ -146,5 +135,4 @@ label x13:
       jump x16
     "Explorer la planète":
       jump x18
-
   return
