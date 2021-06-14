@@ -178,6 +178,49 @@ image bg ssalle ani2:
   pause 0.02
   "bg ssalle.png"
   repeat
+image bg window3d:
+  "bg window1.png"
+  pause 0.5
+  "bg window2.png"
+  pause 0.5
+  "bg window3.png"
+  pause 0.5
+  "bg window4.png"
+  pause 0.5
+  "bg window5.png"
+  pause 0.5
+  "bg window6.png"
+  pause 0.5
+  "bg window7.png"
+  pause 0.5
+  "bg window8.png"
+  pause 0.5
+  "bg window9.png"
+  pause 0.5
+  "bg window10.png"
+  pause 0.5
+  "bg window11.png"
+  pause 0.5
+  "bg window12.png"
+  pause 0.5
+  "bg window13.png"
+  pause 0.5
+  "bg window14.png"
+  pause 0.5
+  "bg window15.png"
+  pause 0.5
+  "bg window16.png"
+  pause 0.5
+  "bg window17.png"
+  pause 0.5
+  "bg window18.png"
+  pause 0.5
+  "bg window19.png"
+  pause 0.5
+  "bg window20.png"
+  pause 0.5
+  "000000.png"
+  pause 1
 label start:
   scene bg time
   play music music03
@@ -609,26 +652,7 @@ label c39:
 label c40:
   stop music
   hide billy
-  play sound explosion
-  show cockpit destruction1
-  pause 0.5
-  show cockpit destruction2
-  pause 0.5
-  show cockpit destruction3
-  pause 0.5
-  show cockpit destruction4
-  pause 0.5
-  show cockpit destruction5
-  pause 0.5
-  show cockpit destruction6
-  pause 0.5
-  show cockpit destruction7
-  pause 0.5
-  show ffffff
-  pause 1
-  scene bg end1
-  pause 13
-  return
+  jump f1
 label c41:
   scene bg stam
   show cockpit base
@@ -719,6 +743,14 @@ label c48:
     "Ne rien dire":
       jump c116
 label c49:
+  show billy mort
+  play sound AAAaaah
+  "Billy est mort."
+  menu:
+    "Prendre les commandes du vaiseau":
+      jump c122
+    "Rester immobile":
+      jump c123
 label c50:
   show billy mourant
   play sound talk2
@@ -737,6 +769,7 @@ label c51:
     "Tuer Billy":
       jump c53
 label c52:
+  b "…"
   menu:
     "Tuer Billy":
       jump c55
@@ -769,8 +802,28 @@ label c54:
     "Le porter":
       jump c91
 label c55:
+  "Billy est mort."
   show billy mort
+  menu:
+    "L'envoyer par dessus bord":
+      jump c83
+    "Lui tirer dessus":
+      jump c88
+    "Le manger":
+      jump c89
+    "Prendre les commandes du vaisseau":
+      jump c122
+    "Rester immobile":
+      jump c123
 label c56:
+  scene black
+  "Vous vous approchez pour ouvrir la fenêtre."
+  "Vous tirez lentement la fenêtre…"
+  window hide
+  stop music
+  scene bg window3d
+  pause 12
+  jump f2
 label c57:
   scene bg stem
   show cockpit base
@@ -988,4 +1041,32 @@ label c121:
       jump c121
     "S'approcher et le tuer":
       jump c68
+label c122:
+  #Billy est mort → Prendre les commandes du vaiseau
+label c123:
+  #Billy est mort → Rester immobile
+label f1:
+  play sound explosion
+  show cockpit destruction1
+  pause 0.5
+  show cockpit destruction2
+  pause 0.5
+  show cockpit destruction3
+  pause 0.5
+  show cockpit destruction4
+  pause 0.5
+  show cockpit destruction5
+  pause 0.5
+  show cockpit destruction6
+  pause 0.5
+  show cockpit destruction7
+  pause 0.5
+  show ffffff
+  pause 1
+  scene bg end1
+  pause 13
+  return
+label f2:
+  scene bg end2
+  pause 13
   return
