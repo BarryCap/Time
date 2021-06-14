@@ -343,7 +343,7 @@ label s23:
       jump s38
     "I knew Billy was evil!":
       jump s39
-    "Talk with a more appropriate language please!"
+    "Talk with a more appropriate language please!":
       jump s40
     "Who are you?":
       jump s41
