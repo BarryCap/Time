@@ -37,190 +37,103 @@ define audio.music09 = "sounds/TIMEmusic09.wav"
 define audio.music10 = "sounds/TIMEmusic10.wav"
 define audio.music11 = "sounds/TIMEmusic11.wav"
 image bg w_b ani1:
-  "f0f0f0.png"
-  pause 0.5
-  "e0e0e0.png"
-  pause 0.5
-  "d0d0d0.png"
-  pause 0.5
-  "c0c0c0.png"
-  pause 0.5
-  "b0b0b0.png"
-  pause 0.5
-  "a0a0a0.png"
-  pause 0.5
-  "909090.png"
-  pause 0.5
-  "808080.png"
-  pause 0.5
-  "707070.png"
-  pause 0.5
-  "606060.png"
-  pause 0.5
-  "505050.png"
-  pause 0.5
-  "404040.png"
-  pause 0.5
-  "303030.png"
-  pause 0.5
-  "202020.png"
-  pause 0.5
-  "101010.png"
-  pause 0.5
+  "f0f0f0.png", pause 0.5
+  "e0e0e0.png", pause 0.5
+  "d0d0d0.png", pause 0.5
+  "c0c0c0.png", pause 0.5
+  "b0b0b0.png", pause 0.5
+  "a0a0a0.png", pause 0.5
+  "909090.png", pause 0.5
+  "808080.png", pause 0.5
+  "707070.png", pause 0.5
+  "606060.png", pause 0.5
+  "505050.png", pause 0.5
+  "404040.png", pause 0.5
+  "303030.png", pause 0.5
+  "202020.png", pause 0.5
+  "101010.png", pause 0.5
   "000000.png"
 image bg w_b ani2:
-  "f0f0f0.png"
-  pause 0.2
-  "e0e0e0.png"
-  pause 0.2
-  "d0d0d0.png"
-  pause 0.2
-  "c0c0c0.png"
-  pause 0.2
-  "b0b0b0.png"
-  pause 0.2
-  "a0a0a0.png"
-  pause 0.2
-  "909090.png"
-  pause 0.2
-  "808080.png"
-  pause 0.2
-  "707070.png"
-  pause 0.2
-  "606060.png"
-  pause 0.2
-  "505050.png"
-  pause 0.2
-  "404040.png"
-  pause 0.2
-  "303030.png"
-  pause 0.2
-  "202020.png"
-  pause 0.2
-  "101010.png"
-  pause 0.2
+  "f0f0f0.png", pause 0.2
+  "e0e0e0.png", pause 0.2
+  "d0d0d0.png", pause 0.2
+  "c0c0c0.png", pause 0.2
+  "b0b0b0.png", pause 0.2
+  "a0a0a0.png", pause 0.2
+  "909090.png", pause 0.2
+  "808080.png", pause 0.2
+  "707070.png", pause 0.2
+  "606060.png", pause 0.2
+  "505050.png", pause 0.2
+  "404040.png", pause 0.2
+  "303030.png", pause 0.2
+  "202020.png", pause 0.2
+  "101010.png", pause 0.2
   "000000.png"
 image bg ssalle ani1:
-  "bg ssalle l.png"
-  pause 0.04
-  "bg ssalle r.png"
-  pause 0.04
-  "bg ssalle d.png"
-  pause 0.04
-  "bg ssalle u.png"
-  pause 0.04
-  "bg ssalle d.png"
-  pause 0.04
-  "bg ssalle.png"
-  pause 0.04
-  "bg ssalle r.png"
-  pause 0.04
-  "bg ssalle l.png"
-  pause 0.04
-  "bg ssalle u.png"
-  pause 0.04
-  "bg ssalle d.png"
-  pause 0.04
-  "bg ssalle r.png"
-  pause 0.04
-  "bg ssalle.png"
-  pause 0.04
-  "bg ssalle d.png"
-  pause 0.04
-  "bg ssalle u.png"
-  pause 0.04
-  "bg ssalle d.png"
-  pause 0.04
-  "bg ssalle l.png"
-  pause 0.04
-  "bg ssalle r.png"
-  pause 0.04
-  "bg ssalle u.png"
-  pause 0.04
+  "bg ssalle l.png", pause 0.04
+  "bg ssalle r.png", pause 0.04
+  "bg ssalle d.png", pause 0.04
+  "bg ssalle u.png", pause 0.04
+  "bg ssalle d.png", pause 0.04
+  "bg ssalle.png",   pause 0.04
+  "bg ssalle r.png", pause 0.04
+  "bg ssalle l.png", pause 0.04
+  "bg ssalle u.png", pause 0.04
+  "bg ssalle d.png", pause 0.04
+  "bg ssalle r.png", pause 0.04
+  "bg ssalle.png",   pause 0.04
+  "bg ssalle d.png", pause 0.04
+  "bg ssalle u.png", pause 0.04
+  "bg ssalle d.png", pause 0.04
+  "bg ssalle l.png", pause 0.04
+  "bg ssalle r.png", pause 0.04
+  "bg ssalle u.png", pause 0.04
   "bg ssalle.png"
   repeat
 image bg ssalle ani2:
-  "bg ssalle d.png"
-  pause 0.02
-  "bg ssalle l.png"
-  pause 0.02
-  "bg ssalle u.png"
-  pause 0.02
-  "bg ssalle r.png"
-  pause 0.02
-  "bg ssalle.png"
-  pause 0.02
-  "bg ssalle u.png"
-  pause 0.02
-  "bg ssalle d.png"
-  pause 0.02
-  "bg ssalle r.png"
-  pause 0.02
-  "bg ssalle d.png"
-  pause 0.02
-  "bg ssalle l.png"
-  pause 0.02
-  "bg ssalle u.png"
-  pause 0.02
-  "bg ssalle r.png"
-  pause 0.02
-  "bg ssalle.png"
-  pause 0.02
-  "bg ssalle d.png"
-  pause 0.02
-  "bg ssalle l.png"
-  pause 0.02
-  "bg ssalle d.png"
-  pause 0.02
-  "bg ssalle u.png"
-  pause 0.02
-  "bg ssalle r.png"
-  pause 0.02
+  "bg ssalle d.png", pause 0.02
+  "bg ssalle l.png", pause 0.02
+  "bg ssalle u.png", pause 0.02
+  "bg ssalle r.png", pause 0.02
+  "bg ssalle.png",   pause 0.02
+  "bg ssalle u.png", pause 0.02
+  "bg ssalle d.png", pause 0.02
+  "bg ssalle r.png", pause 0.02
+  "bg ssalle d.png", pause 0.02
+  "bg ssalle l.png", pause 0.02
+  "bg ssalle u.png", pause 0.02
+  "bg ssalle r.png", pause 0.02
+  "bg ssalle.png",   pause 0.02
+  "bg ssalle d.png", pause 0.02
+  "bg ssalle l.png", pause 0.02
+  "bg ssalle d.png", pause 0.02
+  "bg ssalle u.png", pause 0.02
+  "bg ssalle r.png", pause 0.02
   "bg ssalle.png"
   repeat
 image bg window3d:
-  "bg window1.png"
-  pause 0.5
-  "bg window2.png"
-  pause 0.5
-  "bg window3.png"
-  pause 0.5
-  "bg window4.png"
-  pause 0.5
-  "bg window5.png"
-  pause 0.5
-  "bg window6.png"
-  pause 0.5
-  "bg window7.png"
-  pause 0.5
-  "bg window8.png"
-  pause 0.5
-  "bg window9.png"
-  pause 0.5
-  "bg window10.png"
-  pause 0.5
-  "bg window11.png"
-  pause 0.5
-  "bg window12.png"
-  pause 0.5
-  "bg window13.png"
-  pause 0.5
-  "bg window14.png"
-  pause 0.5
-  "bg window15.png"
-  pause 0.5
-  "bg window16.png"
-  pause 0.5
-  "bg window17.png"
-  pause 0.5
-  "bg window18.png"
-  pause 0.5
-  "bg window19.png"
-  pause 0.5
-  "bg window20.png"
-  pause 0.5
-  "000000.png"
-  pause 1
+  "bg window1.png",  pause 0.5
+  "bg window2.png",  pause 0.5
+  "bg window3.png",  pause 0.5
+  "bg window4.png",  pause 0.5
+  "bg window5.png",  pause 0.5
+  "bg window6.png",  pause 0.5
+  "bg window7.png",  pause 0.5
+  "bg window8.png",  pause 0.5
+  "bg window9.png",  pause 0.5
+  "bg window10.png", pause 0.5
+  "bg window11.png", pause 0.5
+  "bg window12.png", pause 0.5
+  "bg window13.png", pause 0.5
+  "bg window14.png", pause 0.5
+  "bg window15.png", pause 0.5
+  "bg window16.png", pause 0.5
+  "bg window17.png", pause 0.5
+  "bg window18.png", pause 0.5
+  "bg window19.png", pause 0.5
+  "bg window20.png", pause 0.5
+  "000000.png",      pause 1
 label start:
   scene bg time
   play music music03
