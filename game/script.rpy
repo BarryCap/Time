@@ -687,7 +687,7 @@ label c52:
     "Tuer Billy":
       jump c55
     "Ouvrir la fenêtre":
-      jump c56
+      jump f2
 label c53:
   show billy mort
   menu:
@@ -728,15 +728,6 @@ label c55:
       jump c122
     "Rester immobile":
       jump c123
-label c56:
-  scene black
-  "Vous vous approchez pour ouvrir la fenêtre."
-  "Vous tirez lentement la fenêtre…"
-  window hide
-  stop music
-  scene bg window3d
-  pause 12
-  jump f2
 label c57:
   scene bg stem
   show cockpit base
@@ -958,28 +949,3 @@ label c122:
   #Billy est mort → Prendre les commandes du vaiseau
 label c123:
   #Billy est mort → Rester immobile
-label f1:
-  play sound explosion
-  show cockpit destruction1
-  pause 0.5
-  show cockpit destruction2
-  pause 0.5
-  show cockpit destruction3
-  pause 0.5
-  show cockpit destruction4
-  pause 0.5
-  show cockpit destruction5
-  pause 0.5
-  show cockpit destruction6
-  pause 0.5
-  show cockpit destruction7
-  pause 0.5
-  show ffffff
-  pause 1
-  scene bg end1
-  pause 13
-  return
-label f2:
-  scene bg end2
-  pause 13
-  return
