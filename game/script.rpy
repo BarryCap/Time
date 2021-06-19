@@ -438,7 +438,7 @@ label c28:
       jump c59
     "If I were a freak, I wouldn't tell you that you were a freak!":
       jump c60
-    "We aren't freaks.":
+    "No, we aren't freaks.":
       jump c61
 label c29:
   play sound talk7
@@ -761,17 +761,24 @@ label c58:
     "Ne pas appuyer sur un bouton":
       jump c45
 label c59:
+  # Tenter d'assassiner Billy → L'attaquer encore → Because you're a freak. → Le freak, c'est chic.
 label c60:
+  # Tenter d'assassiner Billy → L'attaquer encore → Because you're a freak. → If I were a freak, I wouldn't tell you that you were a freak!
 label c61:
+  # Tenter d'assassiner Billy → L'attaquer encore → Because you're a freak. → No, we aren't freaks.
 label c62:
+  # b Ok. Any way, we're traveling through the galaxy of Sreiin 41. > We're approching a black hole, what do we do? → Nothing.
 label c63:
+  # b Ok. Any way, we're traveling through the galaxy of Sreiin 41. > We're approching a black hole, what do we do? → PANIC!
 label c64:
+  # b Ok. Any way, we're traveling through the galaxy of Sreiin 41. > We're approching a black hole, what do we do? → We go back.
 label c65:
   show cockpit base behind billy
   menu:
     "Ok, so what do I have to check?":
       jump c80
 label c66:
+  # b Any way, we're traveling through the galaxy of Sreiin 41. > At first, I'll need you at the commands to check something. → What thing?
 label c67:
   play sound talk9
   b "So, today we're traveling through the galaxy of Sreiin 41."
