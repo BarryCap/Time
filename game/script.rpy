@@ -731,7 +731,7 @@ label c55:
     "Rester immobile":
       jump c123
 label c57:
-  scene bg stem
+  scene bg stam
   show cockpit base
   menu:
     "Réessayer sur un autre":
@@ -747,7 +747,7 @@ label c57:
     "Ne pas appuyer sur un bouton":
       jump c45
 label c58:
-  scene bg sstm
+  scene bg stam
   show cockpit base
   menu:
     "Réessayer sur un autre":
@@ -775,6 +775,7 @@ label c63:
 label c64:
   # b Ok. Any way, we're traveling through the galaxy of Sreiin 41. We're approching a black hole, what do we do? → We go back.
 label c65:
+  scene bg stam
   show cockpit base behind billy
   menu:
     "Ok, so what do I have to check?":
@@ -825,6 +826,7 @@ label c78:
 label c79:
   # Tenter d'assassiner Billy → Le menacer avec le revolver sous votre oreiller → Tirer sur Billy avec votre revolver → Le laisser mourir lentement → Se suicider
 label c80:
+  scene bg stam
   show cockpit base behind billy
   play sound talk8
   b "There's a navigation problem."
