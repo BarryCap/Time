@@ -26,7 +26,7 @@ label f2:
   "Vous tirez ensuite lentement le cadre…"
   window hide
   scene bg window3d
-  pause 12
+  pause 5
   "Et vous vous faites aspirer par l'ouverture."
   "Plongé dans un infini étoilé, qui progressivement s'obscurcit ;"
   "S'obscurcit de votre peur – votre peur de mourir,"

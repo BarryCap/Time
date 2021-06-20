@@ -139,7 +139,7 @@ label start:
   play music music03
   menu:
     "Teleport":
-      jump c1
+      jump f2
 label c1:
   scene bg black
   play sound talk3
@@ -538,6 +538,8 @@ label c36:
 label c37:
   show cockpit dos
   menu:
+    "Appuyer sur le bouton gris":
+      jump c69
     "Appuyer sur le bouton bleu":
       jump c70
     "Appuyer sur le bouton jaune":
@@ -767,18 +769,18 @@ label c60:
 label c61:
   # Tenter d'assassiner Billy → L'attaquer encore → Because you're a freak. → No, we aren't freaks.
 label c62:
-  # b Ok. Any way, we're traveling through the galaxy of Sreiin 41. > We're approching a black hole, what do we do? → Nothing.
+  # b Ok. Any way, we're traveling through the galaxy of Sreiin 41. We're approching a black hole, what do we do? → Nothing.
 label c63:
-  # b Ok. Any way, we're traveling through the galaxy of Sreiin 41. > We're approching a black hole, what do we do? → PANIC!
+  # b Ok. Any way, we're traveling through the galaxy of Sreiin 41. We're approching a black hole, what do we do? → PANIC!
 label c64:
-  # b Ok. Any way, we're traveling through the galaxy of Sreiin 41. > We're approching a black hole, what do we do? → We go back.
+  # b Ok. Any way, we're traveling through the galaxy of Sreiin 41. We're approching a black hole, what do we do? → We go back.
 label c65:
   show cockpit base behind billy
   menu:
     "Ok, so what do I have to check?":
       jump c80
 label c66:
-  # b Any way, we're traveling through the galaxy of Sreiin 41. > At first, I'll need you at the commands to check something. → What thing?
+  # b Any way, we're traveling through the galaxy of Sreiin 41. At first, I'll need you at the commands to check something. → What thing?
 label c67:
   play sound talk9
   b "So, today we're traveling through the galaxy of Sreiin 41."
@@ -790,14 +792,25 @@ label c67:
     "What thing?":
       jump c66
 label c68:
+  # Tenter d'assassiner Billy → L'attaquer encore → Le menacer avec le revolver sous votre oreiller → Tirer dans le vide avec votre revolver → S'approcher et le tuer
 label c69:
+  # Appuyer sur le bouton gris
 label c70:
+  # Appuyer sur le bouton bleu
 label c71:
+  # Appuyer sur le bouton jaune
 label c72:
+  # Appuyer sur le bouton rouge
+  "Just after touching the button, you have the strange sensation that it was a bad idea. After all, this was a red button…"
+  jump f1
 label c73:
+  # N'appuyer sur aucun bouton
 label c74:
+  # Appuyer sur le bouton jaune
 label c75:
+  # Appuyer sur le bouton rouge
 label c76:
+  # N'appuyer sur aucun bouton
 label c77:
   scene bg teleportation
   menu:
@@ -808,7 +821,9 @@ label c77:
     "Retourner au cockpit":
       jump c87
 label c78:
+  # b That's bullshit? But… but I thought that… You told me that when it was written “ſøq vøl/”, it meant that there was a navigation issue… → Did I told you that?
 label c79:
+  # Tenter d'assassiner Billy → Le menacer avec le revolver sous votre oreiller → Tirer sur Billy avec votre revolver → Le laisser mourir lentement → Se suicider
 label c80:
   show cockpit base behind billy
   play sound talk8
@@ -856,20 +871,28 @@ label c83:
     "Remettre la pression":
       jump c99
 label c84:
+  # Conduire le vaisseau
 label c85:
+  # Billy est mort. → Aller au cockpit
 label c86:
+  # Billy est mort. → Aller en salle de téléportation
 label c87:
+  # Billy est mort. → Aller en salle de téléportation → Retourner au cockpit
 label c88:
+  # Tuer Billy → Lui tirer dessus
 label c89:
+  # Tuer Billy → Le manger
 label c90:
+  # (pardonner Billy) → You think? → You will die. (le tuer) → Tuer Billy → S'excuser
 label c91:
+  # (pardonner Billy) → You think? → You will die. (le tuer) → Tuer Billy → Le porter
 label c92:
   scene bg stam
   show cockpit graph behind billy
   play sound talk8
-  b "Ok so on the screen it is written « ſøq vøl/ touch green »."
+  b "Ok so on the screen it is written “ſøq vøl/ touch green”."
   play sound talk8
-  b "I think « ſøq vøl/ » means « navigation problem »."
+  b "I think “ſøq vøl/” means “navigation problem”."
   play sound talk3
   b "But I'm not sure."
   menu:
@@ -880,6 +903,15 @@ label c92:
     "I need to think.":
       jump c120
 label c93:
+  # b There's a navigation problem. Maybe you could see what's causing it. → No that's bullshit!
+  play sound talk3
+  b "That's bullshit? But… but I thought that…"
+  b "You told me that when it was showing “ſøq vøl/”, it meant that there was a navigation issue…"
+  menu:
+    "Did I told you that?":
+      jump c78
+    "Maybe… but I think that I'm not exactly the guy who told you this. I think I'm the wrong person.":
+      jump c124
 label c94:
 label c95:
 label c96:
@@ -956,3 +988,5 @@ label c122:
   #Billy est mort → Prendre les commandes du vaiseau
 label c123:
   #Billy est mort → Rester immobile
+label c124:
+  # b That's bullshit? But… but I thought that… You told me that when it was written “ſøq vøl/”, it meant that there was a navigation issue… → Maybe… but I think that I'm not exactly the guy who told you this. I think I'm the wrong person.
