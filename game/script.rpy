@@ -776,6 +776,7 @@ label c64:
   # b Ok. Any way, we're traveling through the galaxy of Sreiin 41. We're approching a black hole, what do we do? → We go back.
 label c65:
   scene bg stam
+  show billy base
   show cockpit base behind billy
   menu:
     "Ok, so what do I have to check?":
@@ -827,6 +828,7 @@ label c79:
   # Tenter d'assassiner Billy → Le menacer avec le revolver sous votre oreiller → Tirer sur Billy avec votre revolver → Le laisser mourir lentement → Se suicider
 label c80:
   scene bg stam
+  show billy base
   show cockpit base behind billy
   play sound talk8
   b "There's a navigation problem."
@@ -890,6 +892,7 @@ label c91:
   # (pardonner Billy) → You think? → You will die. (le tuer) → Tuer Billy → Le porter
 label c92:
   scene bg stam
+  show billy base at left
   show cockpit graph behind billy
   play sound talk8
   b "Ok so on the screen it is written “ſøq vøl/ touch green”."
@@ -897,6 +900,7 @@ label c92:
   b "I think “ſøq vøl/” means “navigation problem”."
   play sound talk3
   b "But I'm not sure."
+  show billy base at center
   menu:
     "I think you just have to push the green button.":
       jump c118
